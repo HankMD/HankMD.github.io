@@ -1,4 +1,4 @@
-from flask import Flask, render_template, send_file
+from flask import Flask, render_template, send_from_directory
 import os
 
 app = Flask(__name__)
@@ -23,15 +23,26 @@ def resume():
 def contact():
 	return render_template('contact.html')
 
-@app.route('/docs/<pdf_file>')
-def get_pdf(pdf_file):
-    return send_file(
-		'../docs/' + pdf_file,  # file path or file-like object
-		'application/pdf',
-		as_attachment=False,
-		attachment_filename=pdf_file
-	)
+@app.route('/js/<path:path>')
+def send_js(path):
+	return send_from_directory('templates/js', path)
 
+@app.route('/css/<path:path>')
+def send_css(path):
+	return send_from_directory('templates/css', path)
+
+@app.route('/docs/<path:path>')
+def send_docs(path):
+	return send_from_directory('docs', path)
+
+# @app.route('/docs/<pdf_file>')
+# def get_pdf(pdf_file):
+#     return send_file(
+# 		'../docs/' + pdf_file,  # file path or file-like object
+# 		'application/pdf',
+# 		as_attachment=False,
+# 		attachment_filename=pdf_file
+# 	)
 
 
 def main():
