@@ -35,14 +35,9 @@ def send_css(path):
 def send_docs(path):
 	return send_from_directory('docs', path)
 
-# @app.route('/docs/<pdf_file>')
-# def get_pdf(pdf_file):
-#     return send_file(
-# 		'../docs/' + pdf_file,  # file path or file-like object
-# 		'application/pdf',
-# 		as_attachment=False,
-# 		attachment_filename=pdf_file
-# 	)
+@app.route('/img/<path:path>')
+def send_img(path):
+	return send_from_directory('img', path)
 
 
 def main():
