@@ -16,7 +16,9 @@ p {
   line-height: 0px;
   color: #79558c; /* Purple */
 }
-.margin {margin-bottom: 15px;}
+.margin {
+  margin-bottom: 15px;
+}
 .bg-1 { 
   background-color: #79558c; /* Purple */
   color: #ffffff;
