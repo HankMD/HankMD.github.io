@@ -4,8 +4,8 @@ My design for a software engineer's professional website.
 Currently being hosted at [hankmd.github.io](https://hankmd.github.io/)
 
 ## Colors
-- #79558c Purple
-- #d3cbd7 Light Purple
-- #747e82 Grey
-- #cbcfd1 Light Grey
-- #ffffff White
+- ![#79558c](https://placehold.it/15/79558c?text=+) #79558c Purple
+- ![#d3cbd7](https://placehold.it/15/d3cbd7?text=+) #d3cbd7 Light Purple
+- ![#747e82](https://placehold.it/15/747e82?text=+) #747e82 Grey
+- ![#cbcfd1](https://placehold.it/15/cbcfd1?text=+) #cbcfd1 Light Grey
+- ![#ffffff](https://placehold.it/15/ffffff?text=+) #ffffff White
