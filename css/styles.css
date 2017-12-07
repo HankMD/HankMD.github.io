@@ -47,10 +47,14 @@ p {
 .col-sm-4 {
   padding-bottom: 35px;
 }
-.col-sm-4 > a > h3 {
+.col-sm-4 > a {
   background-color: #cbcfd1; /* Light Grey */
   color: #747e82; /* Grey */
   border-bottom: #747e82; /* Grey */
+}
+.col-sm-4 > h4 {
+  background-color: #cbcfd1; /* Light Grey */
+  color: #79558c; /* Purple */
 }
 .col-sm-4 > p {
   padding-top: 15px;
@@ -85,24 +89,31 @@ p {
   font-size: 12px;
   letter-spacing: 5px;
 }
-.nav-pills > li {
-  width: 120px;
-  padding-left: 0px;
-  padding-right: 0px;
-}
 .nav-pills > li > a {
-  color: #747e82; /* Grey */
-  background-color: #fff;
+  color: #79558c; /* Purple */
+  background-color: #fff; /* White */
+
+  transition: color 0.4s ease 0s;
+    transition-property: color;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }
 .nav-pills > li > a:hover {
-  color: #000;
-  background-color: #cbcfd1; /* Light Grey */
+  color: #d3cbd7; /* Light Purple */
+  background-color: #fff; /* White */
 }
 .nav-pills > li.active > a {
-  color: #79558c; /* Purple */
-  background-color: #d3cbd7; /* Light Purple */
+  color: #d3cbd7; /* Light Purple */
+  background-color: #fff; /* White */
 }
 .nav-pills > li.active > a:hover {
-  color: #79558c; /* Purple */
-  background-color: #d3cbd7; /* Light Purple */
+  color: #d3cbd7; /* Light Purple */
+  background-color: #fff; /* White */
 }
+.bg-3 > img {
+  padding-right: 0px;
+  padding-left: 0px;
+  width: 20px;
+  height: 20px;
+} 
