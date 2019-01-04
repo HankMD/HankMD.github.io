@@ -1,5 +1,5 @@
 body {
-  font: 20px Proxima Nova, sans-serif;
+  font: 20px Verdana, sans-serif;
   line-height: 1.8;
   color: #f5f6f7;
 }
@@ -10,7 +10,8 @@ p {
   float: left;
 }
 #brand-name {
-  font: 20px Proxima Nova, sans-serif;
+  font: 20px Verdana, sans-serif;
+  font-weight: bold;
   float: right;
   padding-left: 20px;
   line-height: 0px;
