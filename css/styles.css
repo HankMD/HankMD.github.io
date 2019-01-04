@@ -72,7 +72,6 @@ p {
   border-radius: 0;
   margin-bottom: 0;
   font-size: 12px;
-/*   letter-spacing: 5px; */
 }
 .navbar-collapse.in > ul {
   padding-left: calc(50% - 60px);
@@ -87,7 +86,6 @@ p {
   border-radius: 0;
   margin-bottom: 0;
   font-size: 12px;
-  letter-spacing: 5px;
 }
 .nav-pills > li > a {
   color: #79558c; /* Purple */
