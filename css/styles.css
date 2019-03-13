@@ -73,6 +73,12 @@ p {
   text-align: center;
   justify-content: center;
 }
+.navbar-collapse.collapsing > ul {
+  padding-left: calc(50% - 60px);
+  padding-right: calc(50% - 60px);
+  text-align: center;
+  justify-content: center;
+}
 .navbar-brand {
   padding-top: 5px;
   padding-bottom: 15px;
