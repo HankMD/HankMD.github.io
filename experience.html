@@ -15,7 +15,10 @@
   <script src="jquery.js"></script>
     <script>
     $(function(){
-      $("#navbar").load("navbar.html");
+      $("#navbar").load("navbar.html", function() {
+        var element = document.getElementById("nav-experience");
+        element.classList.add("active");
+      });
     });
   </script>
 </head>
