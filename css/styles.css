@@ -112,7 +112,7 @@ p {
 /* Make brandname smaller */
 @media (max-width: 374px) {
   #brand-name {
-    font-size: 23px;
+    font-size: 22px;
   }
 }
 /* Make brandname go away */
