@@ -10,7 +10,7 @@ p {
   float: left;
 }
 #brand-name {
-  font: 25px Montserrat, sans-serif;
+  font: 36px Montserrat, sans-serif;
   font-weight: bold;
   float: right;
   padding-left: 20px;
@@ -103,6 +103,11 @@ p {
   color: #d3cbd7; /* Light Purple */
   background-color: #fff; /* White */
 }
+@media (max-width: 450px) {
+  #brand-name {
+    display: none;
+  }
+}
 .bg-3 > a > img {
   padding-right: 0px;
   padding-left: 0px;
@@ -111,8 +116,9 @@ p {
 }
 .about-text {
   padding-top: 50px;
-  padding-left: 25%;
-  padding-right: 25%;
+  padding-left: 12%;
+  padding-right: 12%;
+  font-size: 22px;
 }
 .about-text > .about-introduction {
   color: #79558c; /* Purple */
