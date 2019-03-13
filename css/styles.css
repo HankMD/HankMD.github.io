@@ -160,3 +160,16 @@ p {
 #footer > .container-fluid > a {
   text-decoration: none;
 }
+.resume-viewer-container {
+  padding-bottom: 100%;
+  width: 100%;
+  position: relative;
+}
+#resume-viewer {
+  position: absolute;
+  width: 70%;
+  top: 8%;
+  left: 15%;
+  right: 15%;
+  height: 80%;
+}
