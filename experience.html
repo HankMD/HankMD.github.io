@@ -11,8 +11,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-  <!-- Add in the navbar -->
   <script src="jquery.js"></script>
+
+    <!-- Load in the navbar -->
     <script>
       $(function(){
         $("#navbar").load("navbar.html", function() {
@@ -21,9 +22,33 @@
         });
       });
     </script>
+
+    <!-- Load in the footer -->
     <script>
       $(function(){
         $("#footer").load("footer.html");
+      });
+    </script>
+
+    <!-- Load the content for each experience cell -->
+    <script>
+      $(function(){
+        $("#apple").load("apple.html");
+      });
+    </script>
+    <script>
+      $(function(){
+        $("#rookieroad").load("rookieroad.html");
+      });
+    </script>
+    <script>
+      $(function(){
+        $("#aholddelhaize").load("aholddelhaize.html");
+      });
+    </script>
+    <script>
+      $(function(){
+        $("#engineeredsignals").load("engineeredsignals.html");
       });
     </script>
 </head>
@@ -38,46 +63,10 @@
 
 <div class="container-fluid bg-2 text-center">
   <div class="row">
-    <div class="col-sm-4">
-      <a href="http://www.apple.com/" target="_blank">
-        <img src="img/apple_logo.png" class="img-circle" height="120" width="120">
-        <h3>Apple, Inc.</h3>
-      </a>
-      <h4>Automation Infrastructure Intern</h4>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-      </p>
-    </div>
-    <div class="col-sm-4">
-      <a href="http://www.rookieroad.com/" target="_blank">
-        <img src="img/rookie-road_logo.png" class="img-circle" height="120" width="120">
-        <h3>Rookie Road</h3>
-      </a>
-      <h4>Manager of Automation</h4>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-      </p>
-    </div>
-    <div class="col-sm-4">
-      <a href="http://www.aholddelhaize.com/" target="_blank">
-        <img src="img/ahold-delhaize_logo.png" class="img-circle" height="120" width="120">
-        <h3>Ahold Delhaize</h3>
-      </a>
-      <h4>Emerging Technologies Developer (Co-op)</h4>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-      </p>
-    </div>
-    <div class="col-sm-4">
-      <a href="http://www.engineeredsignals.com/" target="_blank">
-        <img src="img/engineered-signals_logo1.png" class="img-circle" height="120" width="120">
-        <h3>Engineered Signals, Inc.</h3>
-      </a>
-      <h4>Software Engineering Intern</h4>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-      </p>
-    </div>
+    <div class="col-sm-4" id="apple"></div>
+    <div class="col-sm-4" id="rookieroad"></div>
+    <div class="col-sm-4" id="aholddelhaize"></div>
+    <div class="col-sm-4" id="engineeredsignals"></div>
   </div>
 </div>
 
