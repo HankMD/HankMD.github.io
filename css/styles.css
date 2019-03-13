@@ -122,3 +122,13 @@ p {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+.page-title {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.responsive-image {
+  max-width: 400px;
+  max-height: 400px;
+  width: 100%;
+  height: 100%;
+}
