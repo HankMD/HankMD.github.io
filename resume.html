@@ -12,19 +12,22 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <!-- Add in the navbar -->
   <script src="jquery.js"></script>
-    <script>
-      $(function(){
-        $("#navbar").load("navbar.html", function() {
-          var element = document.getElementById("nav-resume");
-          element.classList.add("active");
-        });
+  <!-- Load in the navbar -->
+  <script>
+    $(function(){
+      $("#navbar").load("navbar.html", function() {
+        var element = document.getElementById("nav-experience");
+        element.classList.add("active");
       });
-    </script>
-    <script>
-      $(function(){
-        $("#footer").load("footer.html");
-      });
-    </script>
+    });
+  </script>
+
+  <!-- Load in the footer -->
+  <script>
+    $(function(){
+      $("#footer").load("footer.html");
+    });
+  </script>
 </head>
 
 <body>
