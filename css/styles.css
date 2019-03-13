@@ -103,7 +103,14 @@ p {
   color: #d3cbd7; /* Light Purple */
   background-color: #fff; /* White */
 }
-@media (max-width: 450px) {
+/* Make brandname smaller */
+@media (max-width: 430px) {
+  #brand-name {
+    font-size: 29px;
+  }
+}
+/* Make brandname go away */
+@media (max-width: 374px) {
   #brand-name {
     display: none;
   }
@@ -137,4 +144,7 @@ p {
   max-height: 400px;
   width: 100%;
   height: 100%;
+}
+#footer > .container-fluid > a {
+  text-decoration: none;
 }
