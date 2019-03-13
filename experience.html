@@ -14,19 +14,22 @@
   <!-- Add in the navbar -->
   <script src="jquery.js"></script>
     <script>
-    $(function(){
-      $("#navbar").load("navbar.html", function() {
-        var element = document.getElementById("nav-experience");
-        element.classList.add("active");
+      $(function(){
+        $("#navbar").load("navbar.html", function() {
+          var element = document.getElementById("nav-experience");
+          element.classList.add("active");
+        });
       });
-    });
-  </script>
+    </script>
+    <script>
+      $(function(){
+        $("#footer").load("footer.html");
+      });
+    </script>
 </head>
 <body>
 
-<body>
-   <div id="navbar"></div>
-</body>
+<div id="navbar"></div>
 
 <div class="container-fluid bg-1 text-center">
   <h1>Experience</h1>
@@ -67,7 +70,4 @@
   </div>
 </div>
 
-<div class="container-fluid bg-3 text-center">
-    <img src="img/github-logo.png">
-    <img src="img/linkedin-logo.png">
-</div>
+<div id="footer"></div>

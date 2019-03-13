@@ -13,13 +13,18 @@
   <!-- Add in the navbar -->
   <script src="jquery.js"></script>
     <script>
-    $(function(){
-      $("#navbar").load("navbar.html", function() {
-        var element = document.getElementById("nav-resume");
-        element.classList.add("active");
+      $(function(){
+        $("#navbar").load("navbar.html", function() {
+          var element = document.getElementById("nav-resume");
+          element.classList.add("active");
+        });
       });
-    });
-  </script>
+    </script>
+    <script>
+      $(function(){
+        $("#footer").load("footer.html");
+      });
+    </script>
 </head>
 <body>
 
@@ -37,3 +42,5 @@
 <div class="container-fluid bg-2 text-center">
 	<iframe src="docs/Hank-Sheehan_Resume.pdf" width="800" height="1100" type='application/pdf'/>
 </div>
+
+<div id="footer"></div>
