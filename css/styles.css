@@ -6,6 +6,12 @@ body {
 p {
   font-size: 15px;
 }
+p > a {
+  color: #79558c; /* Purple */
+}
+p > a:hover {
+  color: #79558c; /* Purple */
+}
 #brand-img {
   float: left;
 }
@@ -43,12 +49,19 @@ p {
 }
 .col-sm-4 > a {
   background-color: #cbcfd1; /* Light Grey */
-  color: #747e82; /* Grey */
-  border-bottom: #747e82; /* Grey */
+  color: #79558c; /* Purple */
+  border-bottom: #79558c; /* Purple */
 }
-.col-sm-4 > h4 {
+.col-sm-4 > a > h3 {
+  font-weight: bold;
   background-color: #cbcfd1; /* Light Grey */
   color: #79558c; /* Purple */
+  border-bottom: #79558c; /* Purple */
+}
+.col-sm-4 > h4 {
+  font-weight: bold;
+  background-color: #cbcfd1; /* Light Grey */
+  color: #747e82; /* Grey */
 }
 .col-sm-4 > p {
   padding-top: 15px;
