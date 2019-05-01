@@ -189,3 +189,9 @@ p > a:hover {
 #countingcards-video {
   width: 70%;
 }
+.countingcards-content > .container-fluid > .card-img {
+  width: 45%;
+}
+.countingcards-content > .container-fluid > .template-img {
+  width: 40%;
+}
