@@ -4,7 +4,7 @@
   <title>Hank Sheehan</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="img/honeycomb.png"/>
+  <link rel="icon" type="image/png" href="/img/honeycomb.png"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -29,13 +29,6 @@
         $("#footer").load("footer.html");
       });
     </script>
-
-    <!-- Load the content for each project cell -->
-    <script>
-      $(function(){
-        $("#countingcards-project").load("projects/countingcards.html");
-      });
-    </script>
 </head>
 
 <body>
@@ -46,7 +39,30 @@
   <h1>Projects</h1>
 </div>
 
-<div class="container-fluid bg-2 text-center" id="countingcards-project"></div>
+<div class="container-fluid bg-2 text-center">
+  <div class="row">
+
+    <div class="col-sm-4" id="countingcards">
+      <a href="/projects/countingcards">
+        <img src="/img/ahold-delhaize_logo.png" class="img-circle" height="120" width="120"/>
+        <h3>Counting Cards Computer Vision</h3>
+      </a>
+      <h4>Technologies Used:</h4>
+      <ul>
+        <li>Computer Vision</li>
+        <li>Template Matching</li>
+        <li>Feature Detection</li>
+        <li>Python 3.6</li>
+        <li>OpenCV</li>
+      </ul>
+    </div>
+
+    <!-- <div class="col-sm-4" id="rookieroad-experience"></div> -->
+    <!-- <div class="col-sm-4" id="aholddelhaize-experience"></div> -->
+    <!-- <div class="col-sm-4" class="buffer"></div> -->
+    <!-- <div class="col-sm-4" id="engineeredsignals-experience"></div> -->
+  </div>
+</div>
 
 <div id="footer"></div>
 
