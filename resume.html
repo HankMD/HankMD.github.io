@@ -16,10 +16,10 @@
 
   <!-- Resize image for iOS browsers -->
   <script>
-    document.getElementById("resume-viewer").contentWindow.onload = function() {
-        this.document.getElementsByTagName("img")[0].style.width="100%";
-        this.document.getElementsByTagName("img")[0].style.height="100%";
-    };
+    waitForElement('#resume-viewer', () => {
+      this.document.getElementsByTagName("img")[0].style.width="20%";
+      this.document.getElementsByTagName("img")[0].style.height="20%";
+    });
   </script>
 
 </head>
@@ -32,6 +32,6 @@
   </div>
 
   <div class="container-fluid bg-2 text-center resume-viewer-container">
-  	<iframe id="resume-viewer" src="/docs/Hank-Sheehan_Resume.pdf" type='application/pdf'></iframe>
+  	<iframe id="resume-viewer" src="https://drive.google.com/file/d/0B--aH3ISUCjfM0dCWlJIbGluSDVkcmYtQ2VSRmQwU3pMS2hz/preview" type='application/pdf'></iframe>
   </div>
 </div>
