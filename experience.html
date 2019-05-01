@@ -1,76 +1,44 @@
 <!DOCTYPE html>
 
 <head>
-  <title>Hank Sheehan</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="/img/honeycomb.png"/>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="/css/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+  <meta charset="UTF-8">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="/js/utils.js" type="text/javascript"></script>
 
+  <!-- Load in the template and load in the content -->
+  <script>
+    window.addEventListener('load', () => {
+      loadTemplate();
+      setActive("#nav-experience");
+    });
+  </script>
 
-
-    <!-- Load in the navbar -->
-    <script>
-      $(function(){
-        $("#navbar").load("/navbar.html", function() {
-          var element = document.getElementById("nav-experience");
-          element.classList.add("active");
-        });
-      });
-    </script>
-
-    <!-- Load in the footer -->
-    <script>
-      $(function(){
-        $("#footer").load("/footer.html");
-      });
-    </script>
-
-    <!-- Load the content for each experience cell -->
-    <script>
-      $(function(){
-        $("#apple-experience").load("experience/apple.html");
-      });
-    </script>
-    <script>
-      $(function(){
-        $("#rookieroad-experience").load("experience/rookieroad.html");
-      });
-    </script>
-    <script>
-      $(function(){
-        $("#aholddelhaize-experience").load("experience/aholddelhaize.html");
-      });
-    </script>
-    <script>
-      $(function(){
-        $("#engineeredsignals-experience").load("experience/engineeredsignals.html");
-      });
-    </script>
+  <!-- Load the content for each experience cell -->
+  <script>
+    $(function(){
+      $("#apple-experience").load("experience/apple.html");
+      $("#rookieroad-experience").load("experience/rookieroad.html");
+      $("#aholddelhaize-experience").load("experience/aholddelhaize.html");
+      $("#engineeredsignals-experience").load("experience/engineeredsignals.html");
+    });
+  </script>
 </head>
 
-<body>
+<div id="template"></div>
 
-<div id="navbar"></div>
+<div id="content">
+  <div class="container-fluid bg-1 text-center page-title">
+    <h1>About</h1>
+  </div>
 
-<div class="container-fluid bg-1 text-center page-title">
-  <h1>Experience</h1>
-</div>
-
-<div class="container-fluid bg-2 text-center">
-  <div class="row">
-    <div class="col-sm-4" id="apple-experience"></div>
-    <div class="col-sm-4" id="rookieroad-experience"></div>
-    <div class="col-sm-4" id="aholddelhaize-experience"></div>
-    <div class="col-sm-4" class="buffer"></div>
-    <div class="col-sm-4" id="engineeredsignals-experience"></div>
+  <div class="container-fluid bg-2 text-center">
+    <div class="row">
+      <div class="col-sm-4" id="apple-experience"></div>
+      <div class="col-sm-4" id="rookieroad-experience"></div>
+      <div class="col-sm-4" id="aholddelhaize-experience"></div>
+      <div class="col-sm-4" class="buffer"></div>
+      <div class="col-sm-4" id="engineeredsignals-experience"></div>
+    </div>
   </div>
 </div>
-
-<div id="footer"></div>
-
-</body>
